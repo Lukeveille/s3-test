@@ -1,0 +1,13 @@
+original size
+<%= image_tag(@user.avatar.url) %>
+
+large size
+<%= image_tag(@user.avatar.large_avatar.url) %>
+
+medium size
+<%= image_tag(@user.avatar.medium_avatar.url) %>
+
+small size
+<%= image_tag(@user.avatar.small_avatar.url) %>
+
+<%= link_to 'Home', users_path %>

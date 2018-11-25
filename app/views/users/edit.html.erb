@@ -1,0 +1,13 @@
+<%= link_to 'Home', users_path %>
+
+<%= @user.name %>
+
+<br />
+
+<%= form_for @user, :html => {:multipart => true} do |f| %>
+    My Avatar
+    <% f.label :avatar %>
+    <%= f.file_field :avatar %>
+    <%= f.hidden_field :avatar_cache %>
+    <%= f.submit %>
+<% end %>
