@@ -6,4 +6,5 @@ CarrierWave.configure do |config|
       :region                 => ENV['PICTGUR_AWS_REGION'] # Change this for different AWS region. Default is 'us-east-1'
   }
   config.fog_directory  = ENV['PICTGUR_AWS_BUCKET']
+  config.fog_public = true
 end
